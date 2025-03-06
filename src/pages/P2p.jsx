@@ -3,7 +3,7 @@ import { Peer } from "peerjs";
 import useWebSocket from "react-use-websocket";
 import "../assets/css/P2p.css";
 
-const SOCKET_URL = "ws://localhost:5000";
+const SOCKET_URL = import.meta.env.REACT_APP_SOCKET_URL;
 
 function Home() {
   const [peerId, setPeerId] = useState("");

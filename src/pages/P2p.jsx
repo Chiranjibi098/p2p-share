@@ -5,7 +5,7 @@ import "../assets/css/P2p.css";
 
 const SOCKET_URL = "ws://localhost:5000";
 
-function App() {
+function Home() {
   const [peerId, setPeerId] = useState("");
   const [remoteId, setRemoteId] = useState("");
   const [connected, setConnected] = useState(false);
@@ -79,7 +79,7 @@ function App() {
     <div className="wrap">
       <div className="form">
         <h2>P2P File Transfer</h2>
-        <p>Your ID: {peerId}</p>
+        <p className="btn-shine">Your ID: {peerId}</p>
         <div className="PeerSec">
           <input
             type="text"
@@ -118,4 +118,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -14,31 +14,25 @@ body {
   margin-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #00000080;
-  text-shadow: none;
-  background: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #fbca1f;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
   cursor: pointer;
-  box-shadow: transparent;
-  border: 1px solid #ffffff80;
-  transition: 0.5s ease;
-  user-select: none;
+}
+.Button:hover{
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
 }
 
-#btn:hover,
-:focus {
-  color: #ffffff;
-  background: #008cff;
-  border: 1px solid #008cff;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-    0 0 100px #008cff;
+.Button:active{
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
 
 /* From Uiverse.io by eirikvold */
@@ -95,4 +89,9 @@ p {
 }
 h2 {
   margin: 0 !important;
+}
+
+.btn-shine{
+  font-family: "Cutive Mono", monospace;
+  font-size: medium;
 }

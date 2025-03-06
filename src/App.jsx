@@ -1,8 +1,18 @@
-import React from "react";
-import P2p from "@/pages/p2p"; 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/P2p";
+import HomeLayout from "./pages/HomeLayout";
 
-export default function App(){
-  return(
-    <P2p/>
-  );
+function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                {/* Landing Screen */}
+                <Route element={<HomeLayout />}>
+                    <Route path="/" element={<Home />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
+
+export default App;
